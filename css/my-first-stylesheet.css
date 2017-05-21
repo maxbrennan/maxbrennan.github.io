@@ -1,7 +1,7 @@
 body {
 background-color: Thistle;
 border: 2px solid Gray;
-border-radius: 16px
+border-radius: 16px;
 font-family: sans-serif;
 margin-left: auto;
 margin-right: auto;
@@ -41,6 +41,30 @@ nav ul li a {
 text-decoration: none;
 color: #5B5BFF;
 }
+nav li.selected {
+color: #26266A;
+}
+nav li a:hover {
+text-decoration:
+underline;
+}
+a:link {
+color: blue;
+}
+a:visited {
+color: #5B5BFF;
+}
+a:unvisited {
+color: #5B5BFF
+}
+a:hover {
+text-decoration: underline;
+}
+a:active {
+text-decoration: underline;
+background-color: black;
+color: white;
+}
 p.top-tip {
 border:4px dashed
 #00AFEB;
@@ -55,14 +79,20 @@ content:"MEGA TIP! ";
 font-weight:bold;
 }
 table {
-font-size:70%;
+font-size:100%;
+border-collapse:
+collapse;
 width: 100%;
 }
 th, td {
 border:1px solid
-#000000;
+#715A0A;
+padding:8px;
 }
 th {
+background-color:
+#E5D59C;
 }
 td {
+background: radial-gradient(circle, SkyBlue, SkyBlue 50%, LightCyan 50%, SkyBlue);
 }
