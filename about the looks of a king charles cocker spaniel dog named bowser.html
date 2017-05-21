@@ -24,5 +24,22 @@ href="css/my-first-stylesheet.css"/>
 This is <strong>me</strong>:
 <p><img src="images/me.png"
 alt="Picture of Me"/></p>
-<p class="top-tip">Don't get to close to bowser when first meeting him.</p></body>
+<p>
+<img id="display-image" onclick="swapImage()" src="images/01.png" width="180"
+height="180"/>
+</p>
+<p>Click the image to turn my face into Bowsers face!</p>
+<script>
+function swapImage() {
+var imageDisplayed = document.getElementById('display-image');
+if (imageDisplayed.src.match("images/01.png")) {
+imageDisplayed.src = "images/02.png";
+}
+else {
+imageDisplayed.src = "images/01.png";
+}
+}
+</script>
+<p class="top-tip">Don't get to close to bowser when first meeting him.</p>
+</body>
 </html>
