@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 body {
 background-color: Thistle;
 border: 2px solid Gray;
 border-radius: 16px;
-font-family: sans-serif;
+font-family: 'Lobster', cursive;
 margin-left: auto;
 margin-right: auto;
 max-width: 1024px;
@@ -10,11 +11,16 @@ min-width: 256px;
 padding-top: 8px;
 padding-bottom: 24px;
 padding-left: 24px;
-padding-right: 24px
+padding-right: 24px;
+color:#111111;
 }
 html {
 background: radial-gradient(circle, SkyBlue, SkyBlue 50%, LightCyan 50%, SkyBlue);
 background-size: 8px 8px;
+box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
 }
 h1 {
 background-color: #E5D59C
@@ -24,7 +30,7 @@ list-style-type: circle;
 background-color: #6D4C1E;
 border: 5px dashed #5B5BFF;
 border-radius: 10px;
-font-family: cursive;
+font-family: 'Lobster', cursive;
 font-weight: bold;
 padding: 5px;
 }
@@ -95,4 +101,86 @@ background-color:
 }
 td {
 background: radial-gradient(circle, SkyBlue, SkyBlue 50%, LightCyan 50%, SkyBlue);
+}
+/* Orginization Color */
+header {
+background-color: #E5D59C;
+}
+nav {
+background-color: #FCAB68;
+}
+article {
+background-color: #FFD239;
+}
+section {
+background-color: #88BB75;
+}
+aside {
+background-color: #1EADDF;
+}
+footer {
+background-color: #E5D59C;
+}
+
+/* Image Positions */
+
+img.small {
+height: 200px;
+margin-bottom: 24px;
+margin-right: 24px;
+padding-left: 24px;
+padding-right: 24px;
+}
+img.medium {
+max-width: 360px;
+width: 50%;
+}
+img.large {
+width: 100%;
+}
+
+/* Footer and Header Elements being Neatened up */
+
+header p {
+float: left;
+font-size: 16px;
+font-weight: bold;
+margin-top: 0px;
+}
+header h1 {
+font-size: 16px;
+text-align: right;
+}
+footer p.copyright {
+float: left;
+margin-top: 0px;
+}
+footer p.contact {
+text-align: right;
+}
+
+/* Rounded Borders around Images */
+
+body, section, img {
+border: 2px solid Gray;
+border-radius: 16px;
+}
+
+/* Positioning Articles, Asides, Footers, and Sections */
+
+@media all and (min-width: 900px)
+{
+article {
+float: left;
+width: 66%;
+}
+aside {
+float: left;
+padding-left: 24px;
+width: 34%;
+padding-bottom: 1353px;
+}
+footer {
+clear: both;
+}
 }
