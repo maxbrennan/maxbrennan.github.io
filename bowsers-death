@@ -4,3 +4,17 @@
 <title>
 Bowser's Death
 </title>
+<link type="text/css" rel="stylesheet"
+href="css/my-first-stylesheet.css"/>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="index.html">Max's Home Page</a></li>
+<li><a href="index2.html">Bowser's Home Page</a></li>
+<li class="selected">Bowser's Death</li>
+</ul>
+</nav>
+<h1>Bowser's Death</h1>
+</body>
+</html>
