@@ -15,12 +15,12 @@ function test() {
              your covid 19 break.
         </p>
         <form name="coveid" onsubmit="return false">
-            <label name="labelFirstName">First Name</label>
-            <input type="text" value="Type name here" name="firstName"/>
-            <label name="labelLastName">Last Name</label>
-            <input type="text" value="Type name here" name="lastName"/>
-            <button type="button" value="Submit" onclick="test()"></button>
-            <button type="reset" value="Reset"></button>
+            <label id="labelFirstName">First Name</label>
+            <input type="text" value="Type name here" id="firstName"/>
+            <label id="labelLastName">Last Name</label>
+            <input type="text" value="Type name here" id="lastName"/>
+            <input type="button" value="Submit" onclick="test()"></input>
+            <input type="reset" value="Reset"></input>
         </form>
         <p>The Output</p>
         <div id="outputDiv"></div>
