@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 
 <head>
-
+<script type="application/javascript">
+function test() {
+    document.getElementById('outputDiv').innerHTML += document.getElementById('firstName').value;
+}
+</script>
 </head>
 
 <body>
     <h1>
         <p>
-            In this survey, you can tell us what has been happening during your covid 19 break.
+            In this survey, you can tell us what has been happening during
+             your covid 19 break.
         </p>
         <form name="coveid">
-            <label name="labelFirst">First Name</label>
-            <input type="text" name="firstName"/>
-            <label name="labelLast">Last Name</label>
-            <input type="text" name="lastName"/>
+            <label name="labelFirstName">First Name</label>
+            <input type="text" value="Type name here" name="firstName"/>
+            <label name="labelLastName">Last Name</label>
+            <input type="text" value="Type name here" name="lastName"/>
+            <button type="submit" onsubmit="test()"></button>
+            <button type="reset"></button>
         </form>
+        <p>The Output</p>
+        <div id="outputDiv"></div>
     </h1>
 </body>
